@@ -2,8 +2,8 @@
 <html>
 <head>
 	<script>
-	if (top.location!=self.location){
-		parent.location=self.location;
+	if (top != self){
+		window.document.write("<div style='background:black; opacity: 0.5; filter: alpha(opacity = 50); position: absolute; top: 0px; left: 0px; width: 9999px; height: 9999px; z-index: 1000001' onClick='top.location.href=window.location.href'></div>");
 	}
 	</script>
 </head>
